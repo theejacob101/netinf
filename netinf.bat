@@ -2,7 +2,7 @@
 @echo off
 title netinf
 echo Checking network info...
-set uptct=9998
+set uptct=0
 :loop
 for /f "tokens=2 delims=:" %%a in ('netsh wlan show interface ^|find "SSID" ^|findstr /v "BSSID"') do set SSID=%%a
 for /f "tokens=2 delims=:" %%a in ('netsh wlan show interface ^|find "Authentication"') do set SUCTYPE=%%a
