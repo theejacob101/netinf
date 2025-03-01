@@ -1,6 +1,6 @@
 @mode 38,25
 @echo off
-title netinf
+title cmd.exe - netinf
 echo Checking network info...
 set uptct=0
 :loop
